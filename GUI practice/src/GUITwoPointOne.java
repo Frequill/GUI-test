@@ -1,6 +1,10 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Objects;
+
+import static java.lang.System.out;
 
 public class GUITwoPointOne {
     public static void main(String[] args) {
@@ -59,6 +63,23 @@ public class GUITwoPointOne {
         });
 
         frame.setVisible(true);
+
+        // ************************************* Attempt 2 in adding an image *************************************
+
+        JLabel image = new JLabel();
+        ImageIcon imageSupport = new ImageIcon("gerFlagTrue.png");
+        image.setIcon(imageSupport);
+        image.setBounds(10, 200, 70, 40);
+        panel.add(image);
+
+        JLabel description = new JLabel("I am a weirdly stretched german flag :(");
+        description.setBounds(100, 200, 1000, 40);
+        panel.add(description);
+
+        // This will take some practice...
+
+
+
 
 
     }
